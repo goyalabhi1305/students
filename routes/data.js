@@ -13,9 +13,7 @@ router.get('/insert', async (req, res) => {
             class:'12'
         }).save()
         if (insert) {
-            console.log(insert)
         res.status(200).json({msg:'success' })
-            
         }
         else {
         res.status(500).json({msg:'An error occurred'})
